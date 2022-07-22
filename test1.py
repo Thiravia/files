@@ -149,3 +149,90 @@ for i in range(n):
         print("ineuron",end=" ")
     print()
 
+for i in l:
+    if type(i)==list:
+        print(i)
+
+for i in l:
+    if type(i)==dict:
+        print(i)
+
+for i in l:
+    if type(i)==tuple:
+        print(i)
+
+for i in l:
+    if type(i)==list or type(i)==tuple or type(i)==set:
+        for j in i:
+            if type(j)==int:
+                print(j)
+for i in l:
+    if type(i)==dict:
+        for k,v in i.items():
+            if type(k)==int or type(v)==int:
+                print(k)
+                print(v)
+
+l1=[1,2,3,4,2,3,4,5,6,3,4,5,6,7,45,4,5,23,3,6,7,8]
+
+for i in l1:
+    if i%2==0:
+        pass
+    else:
+        print(i)
+
+for i in l:
+    if type(i)==list:
+        for j in i:
+            if j=="ineuron":
+                print(j)
+
+for i in set(l1):
+    print(i,":",l1.count(i))
+
+for i in l:
+    if type(i)==dict:
+        print(i)
+
+for i in l:
+    if type(i)==list:
+        for j in i:
+            if type(j)==str:
+                print(j)
+    if type(i)==dict:
+        for k,v in i.items():
+            if type(k)==str or type(v)==str:
+                print(k)
+                print(v)
+
+for i in l:
+    m=1
+    if type(i)==list or type(i)==tuple or type(i)==set:
+        for j in i:
+            if type(j)==int:
+                m = m *j
+        print(type(i),":",m)
+    if type(i)==dict:
+        for k in i.items():
+            for n in k:
+                if type(n)==int:
+                    m=m*n
+        print(type(i), ":", m)
+
+#task 6
+
+a=1
+b=9
+while a<=b:
+    print("*" *a)
+    a = a + 1
+
+a=1
+b=1000
+while a<=b:
+    if a%2==0:
+        print(a)
+    a=a+1
+
+
+
